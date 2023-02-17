@@ -1,19 +1,25 @@
-package Button;
+package Checkbox;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
-public class ButtonSelecting {
+public class CheckboxSelecting {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver","C:\\Users\\burak\\Desktop\\Burak\\Selenium_RahulShetty\\RahulCourse\\Drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
-        System.out.println(driver.findElement(By.cssSelector("input[id='ctl00_mainContent_chk_SeniorCitizenDiscount'")).isSelected());
-        driver.findElement(By.cssSelector("input[id='ctl00_mainContent_chk_SeniorCitizenDiscount'")).click();
-        System.out.println(driver.findElement(By.cssSelector("input[id='ctl00_mainContent_chk_SeniorCitizenDiscount'")).isSelected());
+        Assert.assertFalse(driver.findElement(By.cssSelector("input[id='ctl00_mainContent_chk_SeniorCitizenDiscount'")).isSelected()); // senior citizen button
+
+
+//        System.out.println(driver.findElement(By.cssSelector("input[id='ctl00_mainContent_chk_SeniorCitizenDiscount'")).isSelected());
+        driver.findElement(By.cssSelector("input[id='ctl00_mainContent_chk_SeniorCitizenDiscount'")).click();                           // senior citizen button
+//        System.out.println(driver.findElement(By.cssSelector("input[id='ctl00_mainContent_chk_SeniorCitizenDiscount'")).isSelected());
+
+        Assert.assertTrue(driver.findElement(By.cssSelector("input[id='ctl00_mainContent_chk_SeniorCitizenDiscount'")).isSelected());
 
         System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());
 
@@ -28,6 +34,8 @@ public class ButtonSelecting {
             i++;
         }
         driver.findElement(By.id("btnclosepaxoption")).click();
+        Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(),"5 Adult");
         System.out.println(driver.findElement(By.id("divpaxinfo")).getText()); // 5 Adult
+        driver.quit();
     }
 }
