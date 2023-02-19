@@ -13,15 +13,21 @@ public class Q2_UI_Dropdowns_EditBoxes_ErrorValidation_Assignment {
         driver.manage().window().maximize();
         driver.get("https://rahulshettyacademy.com/angularpractice/");
 
+        /** Name */
         driver.findElement(By.xpath("//div/input[@name='name']")).sendKeys("name");
+
+        /** Email */
         driver.findElement(By.xpath("//div/input[@name='email']")).sendKeys("asdfg@gitmail.com");
+
+        /** Password */
         driver.findElement(By.id("exampleInputPassword1")).sendKeys("1234321");
+
+        /** IceCreams checkbox */
         driver.findElement(By.xpath("//div/label[@for='exampleCheck1']")).click();
 
         /**  Gender dropdown  */
         System.out.println(driver.findElements(By.cssSelector("div option")).size());
         driver.findElement(By.cssSelector("div option:nth-child(2)")).click();
-
 
 
         /** Employment checkbox */
