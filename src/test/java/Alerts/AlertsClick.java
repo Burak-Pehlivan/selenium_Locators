@@ -9,7 +9,7 @@ public class AlertsClick {
 
         String text = "AlertsTest";
 
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\burak\\Desktop\\Burak\\Selenium_RahulShetty\\RahulCourse\\Drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\burak\\Desktop\\Burak\\Selenium_RahulShetty\\RahulCourse\\Drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
@@ -24,7 +24,7 @@ public class AlertsClick {
         System.out.println(driver.switchTo().alert().getText());
         Thread.sleep(3000);
         driver.switchTo().alert().dismiss();
-
-
     }
+
+
 }
