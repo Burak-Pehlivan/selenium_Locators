@@ -39,8 +39,8 @@ public class AddItem {
 
         driver.findElement(By.cssSelector("input[placeholder='Enter promo code']")).sendKeys(promoCode);
         driver.findElement(By.cssSelector("button.promoBtn")).click();
-        /**  Explicit wait */
 
+        /**  Explicit wait */
         w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));
 
         System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
