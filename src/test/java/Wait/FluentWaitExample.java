@@ -18,9 +18,9 @@ public class FluentWaitExample {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://the-internet.herokuapp.com/dynamic_loading/1");
-        driver.findElement(By.cssSelector("[id='start'] button"));      // start button
+        driver.findElement(By.cssSelector("[id='start'] button")).click();      // start button
 
-        Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(3)).ignoring(NoSuchElementException.class);
+        Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(20)).pollingEvery(Duration.ofSeconds(8)).ignoring(NoSuchElementException.class);
 
         WebElement foo = wait.until(new Function<WebDriver, WebElement>()
         {
