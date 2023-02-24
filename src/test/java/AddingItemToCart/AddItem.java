@@ -22,6 +22,7 @@ public class AddItem {
         driver.manage().window().maximize();
         WebDriverWait w = new WebDriverWait(driver,Duration.ofSeconds(5));
 
+
         String[] itemsNeeded = {"Brocolli","Cucumber"};
         String promoCode="rahulshettyacademy";
         System.out.println(itemsNeeded.length);
