@@ -22,6 +22,7 @@ public class Q3_Synchronization_with_Explicit_wait {
         String userName= "rahulshettyacademy";
         String passWord= "learning";
 
+
         /** Login process */
         driver.findElement(By.cssSelector("input[type='text']")).sendKeys(userName);
         driver.findElement(By.cssSelector("input[type='password']")).sendKeys(passWord);
