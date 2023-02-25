@@ -36,5 +36,18 @@ public class Print_Links_Count_in_the_page {
             columndriver.findElements(By.tagName("a")).get(i).sendKeys(clickonlinkTab);
             Thread.sleep(2000);
         }
+
+        /**  Get title each opened page  */
+
+        Set<String > tabs = driver.getWindowHandles();
+        Iterator <String> it = tabs.iterator();
+
+
+        while(it.hasNext()){
+            String clickonthetab = it.next();
+            driver.switchTo().window(clickonthetab);
+            System.out.println(driver.getTitle());
+
+        }
     }
 }
