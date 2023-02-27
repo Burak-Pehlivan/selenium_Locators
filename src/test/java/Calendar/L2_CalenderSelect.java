@@ -20,6 +20,7 @@ public class L2_CalenderSelect {
         WebElement datespace = driver.findElement(By.cssSelector("input[id='form-field-travel_comp_date']"));
 
         js.executeScript("arguments[0].scrollIntoView();",datespace);
+//        js.executeScript("window.scrollBy(0,700)");
         Thread.sleep(3000);
         datespace.click();
 
