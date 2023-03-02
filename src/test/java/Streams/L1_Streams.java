@@ -1,10 +1,12 @@
 package Streams;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class L1_Streams {
@@ -70,5 +72,55 @@ public class L1_Streams {
                 .map(s -> s.toUpperCase())
                 .sorted()
                 .forEach(s -> System.out.println(s));
+    }
+
+    @Test
+    public void streamMap2()
+    {
+        ArrayList<String> names = new ArrayList<String>();
+        names.add("man");
+        names.add("women");
+        names.add("Bunny");
+        names.add("winter");
+
+
+        Stream.of("Abhijeet","Don","Alekhya","Adam","Rama").filter(s -> s.endsWith("a")).map(s -> s.toUpperCase())
+                .forEach(s -> System.out.println(s));
+
+        // print names which have first letter as "a" with Uppercase and sorted
+        List<String> names1 = Arrays.asList("Abhijeet","Don","Alekhya","Adam","Rama");
+        names1.stream().filter(s -> s.startsWith("A"))
+                .map(s -> s.toUpperCase())
+                .sorted()
+                .forEach(s -> System.out.println(s));
+
+        System.out.println("****** Merging *******");
+
+        /** Merging 2 different lists */
+        Stream <String> newStream = Stream.concat(names.stream(),names1.stream());
+        newStream.sorted().forEach(s -> System.out.println(s));
+
+        Stream <String> newStream1 = Stream.concat(names.stream(),names1.stream());
+        boolean flag = newStream1.anyMatch(s -> s.equalsIgnoreCase("Adam"));
+        System.out.println(flag);
+        Assert.assertTrue(flag);
+    }
+
+    @Test
+    public void streamCollect()
+    {
+        List<String>ls = Stream.of("Abhijeet","Don","Alekhya","Adam","Rama").filter(s -> s.endsWith("a")).map(s -> s.toUpperCase()).collect(Collectors.toList());
+        System.out.println(ls);
+
+        //
+
+        List<Integer> values = Arrays.asList(2,3,5,2,1,2,3,5,6);
+        //print unique number from this array
+        //sort the array
+
+        values.stream().distinct().forEach(s-> System.out.print(s + " , "));
+        List<Integer> li = values.stream().distinct().sorted().collect(Collectors.toList());
+        System.out.println();
+        System.out.println(li.get(2));
     }
 }
