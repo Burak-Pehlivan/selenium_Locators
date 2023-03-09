@@ -1,20 +1,36 @@
 package TestNG;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.util.Iterator;
+
 public class Demo4_Test {
-    @Test
+    @Test (enabled = false)
     public void WebloginHomeLoan(){
-        System.out.println("weblogincar");
+        System.out.println("webloginHome");
     }
 
-    @Test
+    @Test (groups = {"smoke"})
     public void MobileloginHomeLoan(){
-        System.out.println("Mobilelogincar");
+        System.out.println("MobileloginHome");
     }
 
     @Test
     public void LoginAPIHomeLoan(){
-        System.out.println("APIlogincar");
+        System.out.println("APIloginHome");
+    }
+
+    @DataProvider
+    public Object[][] getData(){
+        Object[][] data = new Object[3][2];
+        data[0][0]="firstsetusername";
+        data[0][1]="password";
+
+        data[1][0]="secondsetusername";
+        data[1][1]="secondpassword";
+
+        data[2][0]="thirdsetusername";
+        data[2][1]="thirdpassword";
     }
 }

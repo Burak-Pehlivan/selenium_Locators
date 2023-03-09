@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true"
-          name="C:/Users/burak/Desktop/Burak/SeleniumLocators1/src/test/java/TestNG/Demo_Test.java">
-        <classes>
-            <class name="TestNG.Demo1_Test"></class>
-            <class name="TestNG.Demo2_Test"></class>
-        </classes>
-    </test>
-    <test name="Car Loan">
-        <classes>
-            <class name="TestNG.Demo3_Test"></class>
-            <class name="TestNG.Demo4_Test"></class>
-        </classes>
+    <test name="Personal">
+        <packages>
+            <package name="TestNG"/>
+        </packages>
     </test>
 </suite>
