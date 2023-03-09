@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Personal Loan">
+        <parameter name="NAME" value="EINSTEIN"></parameter>
+        <parameter name="APIkey" value="123456"></parameter>
+        <classes>
+            <class name="TestNG.Demo1_Test"/>
+            <class name="TestNG.Demo2_Test"/>
+        </classes>
+    </test>
+    <test name="Car Loan">
+        <parameter name="NAME" value="TOPRAK"></parameter>
+        <classes>
+            <class name="TestNG.Demo3_Test"/>
+            <class name="TestNG.Demo4_Test"/>
+        </classes>
+    </test>
+</suite>
