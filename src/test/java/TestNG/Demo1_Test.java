@@ -1,5 +1,6 @@
 package TestNG;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class Demo1_Test {
@@ -9,11 +10,13 @@ public class Demo1_Test {
         System.out.println("Demo Start");
         System.out.println(abcdefgh);
         System.out.println(key);
+        Assert.assertTrue(false);
     }
 
     @AfterTest
     public void afterTest(){
         System.out.println("  Execute after Test");
+
     }
     @BeforeTest
     public void secondBeforeTest(){
@@ -28,5 +31,6 @@ public class Demo1_Test {
     @Test
     public void secondTest(){
         System.out.println("Demo finished");
+
     }
 }

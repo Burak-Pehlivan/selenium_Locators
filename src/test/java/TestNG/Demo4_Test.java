@@ -16,9 +16,11 @@ public class Demo4_Test {
         System.out.println("MobileloginHome");
     }
 
-    @Test
-    public void LoginAPIHomeLoan(){
+    @Test (dataProvider = "getData")
+    public void LoginAPIHomeLoan(String username, String password){
         System.out.println("APIloginHome");
+        System.out.println(username);
+        System.out.println(password);
     }
 
     @DataProvider
