@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="11" passed="9" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-11T23:54:51 TRT" name="All Test Suite" finished-at="2023-03-11T23:54:51 TRT" duration-ms="103">
+    <groups>
+      <group name="smoke">
+        <method signature="Demo2_Test.thirdTest()[pri:0, instance:TestNG.Demo2_Test@1ffe63b9]" name="thirdTest" class="TestNG.Demo2_Test"/>
+        <method signature="Demo4_Test.MobileloginHomeLoan()[pri:0, instance:TestNG.Demo4_Test@1622f1b]" name="MobileloginHomeLoan" class="TestNG.Demo4_Test"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-03-11T23:54:51 TRT" name="Personal Loan" finished-at="2023-03-11T23:54:51 TRT" duration-ms="36">
+      <class name="TestNG.Demo1_Test">
+        <test-method is-config="true" signature="secondBeforeTest()[pri:0, instance:TestNG.Demo1_Test@12b0404f]" started-at="2023-03-11T23:54:51 TRT" name="secondBeforeTest" finished-at="2023-03-11T23:54:51 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondBeforeTest -->
+        <test-method signature="demo(java.lang.String,java.lang.String)[pri:0, instance:TestNG.Demo1_Test@12b0404f]" started-at="2023-03-11T23:54:51 TRT" name="demo" finished-at="2023-03-11T23:54:51 TRT" duration-ms="8" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EINSTEIN]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at TestNG.Demo1_Test.demo(Demo1_Test.java:13)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo -->
+        <test-method signature="secondTest()[pri:0, instance:TestNG.Demo1_Test@12b0404f]" started-at="2023-03-11T23:54:51 TRT" name="secondTest" finished-at="2023-03-11T23:54:51 TRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.Demo1_Test@12b0404f]" started-at="2023-03-11T23:54:51 TRT" name="afterTest" finished-at="2023-03-11T23:54:51 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- TestNG.Demo1_Test -->
+      <class name="TestNG.Demo2_Test">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestNG.Demo2_Test@1ffe63b9]" started-at="2023-03-11T23:54:51 TRT" name="beforeTest" finished-at="2023-03-11T23:54:51 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="thirdTest()[pri:0, instance:TestNG.Demo2_Test@1ffe63b9]" started-at="2023-03-11T23:54:51 TRT" name="thirdTest" finished-at="2023-03-11T23:54:51 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdTest -->
+      </class> <!-- TestNG.Demo2_Test -->
+    </test> <!-- Personal Loan -->
+    <test started-at="2023-03-11T23:54:51 TRT" name="Car Loan" finished-at="2023-03-11T23:54:51 TRT" duration-ms="12">
+      <class name="TestNG.Demo1_Test">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:TestNG.Demo1_Test@12b0404f]" started-at="2023-03-11T23:54:51 TRT" name="afterSuite" finished-at="2023-03-11T23:54:51 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- TestNG.Demo1_Test -->
+      <class name="TestNG.Demo4_Test">
+        <test-method signature="LoginAPIHomeLoan(java.lang.String,java.lang.String)[pri:0, instance:TestNG.Demo4_Test@1622f1b]" started-at="2023-03-11T23:54:51 TRT" name="LoginAPIHomeLoan" data-provider="getData" finished-at="2023-03-11T23:54:51 TRT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstsetusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPIHomeLoan -->
+        <test-method signature="LoginAPIHomeLoan(java.lang.String,java.lang.String)[pri:0, instance:TestNG.Demo4_Test@1622f1b]" started-at="2023-03-11T23:54:51 TRT" name="LoginAPIHomeLoan" data-provider="getData" finished-at="2023-03-11T23:54:51 TRT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[thirdsetusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[thirdpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPIHomeLoan -->
+        <test-method signature="LoginAPIHomeLoan(java.lang.String,java.lang.String)[pri:0, instance:TestNG.Demo4_Test@1622f1b]" started-at="2023-03-11T23:54:51 TRT" name="LoginAPIHomeLoan" data-provider="getData" finished-at="2023-03-11T23:54:51 TRT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[secondsetusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secondpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPIHomeLoan -->
+        <test-method signature="MobileloginHomeLoan()[pri:0, instance:TestNG.Demo4_Test@1622f1b]" started-at="2023-03-11T23:54:51 TRT" name="MobileloginHomeLoan" finished-at="2023-03-11T23:54:51 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileloginHomeLoan -->
+      </class> <!-- TestNG.Demo4_Test -->
+      <class name="TestNG.Demo3_Test">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:TestNG.Demo3_Test@3e92efc3]" started-at="2023-03-11T23:54:51 TRT" name="beforeSuite" finished-at="2023-03-11T23:54:51 TRT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestNG.Demo3_Test@3e92efc3]" started-at="2023-03-11T23:54:51 TRT" name="beforeClass" finished-at="2023-03-11T23:54:51 TRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestNG.Demo3_Test@3e92efc3]" started-at="2023-03-11T23:54:51 TRT" name="beforeMethod" finished-at="2023-03-11T23:54:51 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MobileloginCarLoan(java.lang.String)[pri:0, instance:TestNG.Demo3_Test@3e92efc3]" started-at="2023-03-11T23:54:51 TRT" name="MobileloginCarLoan" finished-at="2023-03-11T23:54:51 TRT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TOPRAK]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileloginCarLoan -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.Demo3_Test@3e92efc3]" started-at="2023-03-11T23:54:51 TRT" name="afterMethod" finished-at="2023-03-11T23:54:51 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="WebloginCarLoan(java.lang.String)[pri:0, instance:TestNG.Demo3_Test@3e92efc3]" started-at="2023-03-11T23:54:51 TRT" name="WebloginCarLoan" finished-at="2023-03-11T23:54:51 TRT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TOPRAK]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebloginCarLoan -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestNG.Demo3_Test@3e92efc3]" started-at="2023-03-11T23:54:51 TRT" name="beforeMethod" finished-at="2023-03-11T23:54:51 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.Demo3_Test@3e92efc3]" started-at="2023-03-11T23:54:51 TRT" name="afterMethod" finished-at="2023-03-11T23:54:51 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestNG.Demo3_Test@3e92efc3]" started-at="2023-03-11T23:54:51 TRT" name="beforeMethod" finished-at="2023-03-11T23:54:51 TRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="LoginAPICarLoan()[pri:0, instance:TestNG.Demo3_Test@3e92efc3]" started-at="2023-03-11T23:54:51 TRT" name="LoginAPICarLoan" finished-at="2023-03-11T23:54:51 TRT" depends-on-methods="TestNG.Demo3_Test.MobileloginCarLoan, TestNG.Demo3_Test.WebloginCarLoan" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPICarLoan -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.Demo3_Test@3e92efc3]" started-at="2023-03-11T23:54:51 TRT" name="afterMethod" finished-at="2023-03-11T23:54:51 TRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestNG.Demo3_Test@3e92efc3]" started-at="2023-03-11T23:54:51 TRT" name="afterClass" finished-at="2023-03-11T23:54:51 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestNG.Demo3_Test -->
+    </test> <!-- Car Loan -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
